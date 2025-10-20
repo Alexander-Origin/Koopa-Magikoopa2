@@ -1,0 +1,146 @@
+{
+  "race": {
+    "name": "Koopa",
+    "source": "Kamek Project",
+    "ability": {
+      "choose": {
+        "count": 2,
+        "amount": [2, 1],
+        "note": "Increase one ability by 2 and a different one by 1, or three different scores by 1."
+      }
+    },
+    "size": "M",
+    "speed": { "walk": 30 },
+    "type": "humanoid",
+    "entries": [
+      {
+        "name": "Koopa Traits",
+        "entries": [
+          "Stocky turtlefolk whose durable shells and boundless adaptability make them survivors in any world.",
+          "Koopas are a people defined by resilience and cleverness. Some form disciplined legions or scholarly orders, while others live as tricksters, gliders, or undead echoes of their former selves."
+        ]
+      },
+      {
+        "name": "Instinctive Shell",
+        "entries": [
+          "Your shell automatically absorbs part of any blow that lands. When you take damage, you can harden your shell to lessen the impact. The damage you take is reduced by an amount equal to your proficiency bonus + your Constitution modifier.",
+          "You can use this trait a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+          "This reduction happens naturally — no action or reaction is required."
+        ]
+      },
+      {
+        "name": "Natural Armor",
+        "entries": [
+          "Your shell provides sturdy protection even without equipment. When you aren’t wearing armor, your base AC equals 13 + your Dexterity modifier. You can still benefit from a shield."
+        ],
+        "ac": {
+          "calc": "natural",
+          "formula": "13 + dex"
+        }
+      },
+      {
+        "name": "Turtle Toughness",
+        "entries": [
+          "You can hold your breath for up to 1 hour, and you have resistance to cold damage.",
+          "Additionally, when you make a saving throw to resist being pushed, knocked prone, or moved against your will, you can add +1d4 to the roll."
+        ]
+      },
+      {
+        "name": "Languages",
+        "entries": [
+          "You can speak, read, and write Common and Koopan, a dialect blending Draconic syntax with Goblin grit."
+        ]
+      },
+      {
+        "name": "Shell Colors (Optional Flavor)",
+        "entries": [
+          "Koopas’ shells vary by temperament and lineage:",
+          "<b>Red:</b> Loyal and defensive.",
+          "<b>Green:</b> Bold and reckless.",
+          "<b>Blue:</b> Focused and disciplined.",
+          "<b>Yellow:</b> Energetic and quick-tempered.",
+          "<b>Black or White:</b> Rare; often linked to magical or undead heritage."
+        ]
+      }
+    ],
+    "subraces": [
+      {
+        "name": "Ground Koopa",
+        "entries": [
+          {
+            "name": "Grounded Defense",
+            "entries": [
+              "When you start your turn and haven’t moved since the start of your last turn, you gain temporary hit points equal to your proficiency bonus. These temporary hit points last until the start of your next turn."
+            ]
+          },
+          {
+            "name": "Shell Slam",
+            "entries": [
+              "Once per turn when you hit a creature with an unarmed strike or melee attack, you can push that creature up to 5 feet away from you."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Paratroopa",
+        "entries": [
+          {
+            "name": "Glide Wings",
+            "entries": [
+              "You can use your wings to slow your fall and steer through the air. When you fall, you can move up to your speed horizontally and take no falling damage if you land on your feet."
+            ]
+          },
+          {
+            "name": "Airbound Step",
+            "entries": [
+              "Once per turn when you take the Dash or Disengage action, you can move 10 feet upward without provoking opportunity attacks. At 5th level, when you take either of those actions, you also gain a fly speed equal to your walking speed until the end of your turn."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Magikoopa",
+        "entries": [
+          {
+            "name": "Arcane Burst",
+            "entries": [
+              "As part of the Attack or Cast a Spell action on your turn, you can cause creatures of your choice within 5 feet of you to make a Dexterity saving throw (DC = 8 + your proficiency bonus + your spellcasting ability modifier). On a failed save, a creature takes force damage equal to your proficiency bonus.",
+              "You can use this trait a number of times equal to your proficiency bonus, regaining all expended uses when you finish a long rest."
+            ]
+          },
+          {
+            "name": "Innate Magic",
+            "entries": [
+              "You know one cantrip of your choice from the Wizard spell list.",
+              "At 3rd level, you can cast <i>Blur</i> on yourself once per long rest without expending a spell slot."
+            ]
+          },
+          {
+            "name": "Spellcasting Ability",
+            "entries": [
+              "Choose Intelligence, Wisdom, or Charisma when you select this heritage; that ability is your spellcasting ability for this trait."
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Dry Koopa (Dry Bones)",
+        "entries": [
+          {
+            "name": "Undead Nature",
+            "entries": [
+              "You have advantage on saving throws against being poisoned, and you have resistance to poison damage. You don’t need to eat, drink, or breathe."
+            ]
+          },
+          {
+            "name": "Reassemble",
+            "entries": [
+              "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead and immediately fall prone, collapsing into your shell. Until the start of your next turn, you are unconscious. You automatically regain consciousness at the start of your next turn unless you take damage again.",
+              "Once you use this trait, you can’t use it again until you finish a long rest."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

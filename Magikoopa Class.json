@@ -1,0 +1,457 @@
+{
+  "class": {
+    "name": "Magikoopa",
+    "source": "Kamek Project",
+    "hd": 6,
+    "proficiency": {
+      "armor": [],
+      "weapons": ["Daggers", "Slings", "Quarterstaffs", "Wands", "Light crossbows"],
+      "tools": [],
+      "savingthrows": ["int", "cha"],
+      "skills": {
+        "choose": {
+          "count": 2,
+          "from": ["Arcana", "Deception", "Insight", "Nature", "Performance", "Persuasion"]
+        }
+      }
+    },
+    "equipment": [
+      "(a) a quarterstaff or (b) a dagger",
+      "(a) a scholar’s pack or (b) an entertainer’s pack",
+      "a spellbook",
+      "a wand or broomstick focus",
+      "a component pouch"
+    ],
+    "spellcasting": {
+      "type": "wizard",
+      "ability": "int",
+      "progression": "full",
+      "prepared": true
+    },
+    "autolevel": [
+      { "level": 1, "feature": ["Spellcasting", "Chaotic Casting", "Trickster’s Step"] },
+      { "level": 2, "feature": ["Arcane Tinkering"] },
+      { "level": 3, "feature": ["School of Misrule"] },
+      { "level": 4, "feature": ["Ability Score Improvement"] },
+      { "level": 5, "feature": ["Spell Inflection"] },
+      { "level": 6, "feature": ["School Feature"] },
+      { "level": 7, "feature": ["Broom Mastery"] },
+      { "level": 8, "feature": ["Ability Score Improvement"] },
+      { "level": 9, "feature": ["Guided Mayhem"] },
+      { "level": 10, "feature": ["School Feature"] },
+      { "level": 11, "feature": ["Reality Slip"] },
+      { "level": 12, "feature": ["Ability Score Improvement"] },
+      { "level": 13, "feature": ["Arcane Surge"] },
+      { "level": 14, "feature": ["School Feature"] },
+      { "level": 15, "feature": ["Reality Blink"] },
+      { "level": 16, "feature": ["Ability Score Improvement"] },
+      { "level": 17, "feature": ["Arcane Cataclysm"] },
+      { "level": 18, "feature": ["School Feature"] },
+      { "level": 19, "feature": ["Ability Score Improvement"] },
+      { "level": 20, "feature": ["Master of Misrule"] }
+    ],
+    "entries": [
+      {
+        "name": "Class Summary",
+        "entries": [
+          "Magikoopas — chaotic magi of misrule — are reality warpers who blend arcane precision with joyful unpredictability. They twist magic into whimsical effects: summoning shell-clad minions, warping space with laughter, and rewriting luck itself."
+        ]
+      },
+      {
+        "name": "Hit Points",
+        "entries": [
+          "Hit Dice: 1d6 per Magikoopa level",
+          "Hit Points at 1st Level: 6 + your Constitution modifier",
+          "Hit Points at Higher Levels: 1d6 (or 4) + your Constitution modifier per Magikoopa level after 1st"
+        ]
+      },
+      {
+        "name": "Spellcasting",
+        "entries": [
+          "You are a full caster following the same progression as a wizard. You prepare and cast spells using Intelligence as your spellcasting ability.",
+          "Spell Save DC = 8 + your proficiency bonus + your Intelligence modifier",
+          "Spell Attack Modifier = your proficiency bonus + your Intelligence modifier",
+          "Your magic is whimsical and unpredictable. When you cast certain Magikoopa spells or class features, you may roll a Chaos Die (d4–d12) to determine a random effect."
+        ]
+      },
+      {
+        "name": "Chaotic Casting (Level 1)",
+        "entries": [
+          "Whenever you cast a spell of 1st level or higher, roll a d4:",
+          "1 – You gain temporary flight (10 ft hover) until the end of your next turn.",
+          "2 – You sparkle with magic; gain +2 AC until your next turn.",
+          "3 – You cackle maniacally; your spell attack rolls gain +1 until the end of your turn.",
+          "4 – Your magic ricochets; you may move 10 ft without provoking opportunity attacks."
+        ]
+      },
+      {
+        "name": "Trickster’s Step (Level 1)",
+        "entries": [
+          "As a Bonus Action, teleport up to 15 feet to an unoccupied space you can see, leaving behind a brief illusion of yourself.",
+          "Uses = Intelligence modifier + Proficiency bonus (min 1); regained after a long rest."
+        ]
+      },
+      {
+        "name": "Arcane Tinkering (Level 2)",
+        "entries": [
+          "As a bonus action, you can infuse a minor spell into a trinket or object you touch. Choose a cantrip you know; until the start of your next turn, that object hums with faint power. When a creature touches it, it casts the cantrip as if you had.",
+          "Once you use this, you can’t do so again until you finish a short or long rest.",
+          "Alternatively, cause an object to emit light, sound, or a harmless illusion for 1 minute."
+        ]
+      },
+      {
+        "name": "School of Misrule (Level 3)",
+        "entries": [
+          "At 3rd level, you choose a School of Misrule that reflects your magical philosophy:",
+          "<b>Grand Advisor</b> — master of destiny and manipulation.",
+          "<b>Arcane Prankster</b> — chaotic illusionist who toys with foes.",
+          "<b>Reality Shaper</b> — manipulator of the fabric of existence.",
+          "Your choice grants features at 3rd, 6th, 10th, and 14th levels."
+        ]
+      },
+      {
+        "name": "Spell Inflection (Level 5)",
+        "entries": [
+          "When you cast a spell that deals damage, roll a d6 to add an unpredictable effect:",
+          "1 — The spell’s damage becomes force damage.",
+          "2 — The spell deals +1d8 bonus damage.",
+          "3 — You regain HP equal to half your Intelligence modifier (minimum 1).",
+          "4 — The spell’s range doubles.",
+          "5 — Targets have disadvantage on their next saving throw.",
+          "6 — You gain +2 AC until the start of your next turn.",
+          "Uses = Intelligence modifier per long rest."
+        ]
+      },
+      {
+        "name": "Broom Mastery (Level 7)",
+        "entries": [
+          "You can summon or dismiss your Arcane Broom as a Bonus Action. While mounted, your flying speed equals your walking speed.",
+          "Whenever you cast a spell while flying, you may shift 10 feet in any direction as part of the same action."
+        ]
+      },
+      {
+        "name": "Guided Mayhem (Level 9)",
+        "entries": [
+          "Whenever you roll a Chaos Die, roll an additional die and choose either result. If you roll the same number, reroll until different.",
+          "Once per long rest, you may choose any Chaos Die result without rolling.",
+          "At 18th level, you may do this twice per long rest."
+        ]
+      },
+      {
+        "name": "Reality Slip (Level 11)",
+        "entries": [
+          "As a Bonus Action, become incorporeal until end of your next turn. You can move through creatures and objects as difficult terrain, taking 1d10 force damage if you end inside one.",
+          "Uses = Proficiency bonus per long rest."
+        ]
+      },
+      {
+        "name": "Arcane Surge (Level 13)",
+        "entries": [
+          "As a Bonus Action, supercharge your next spell. Roll a d8:",
+          "1 – Targets save with disadvantage.",
+          "2 – Damage dice become d10s.",
+          "3 – You regain 3 × spell level HP.",
+          "4 – Spell doesn’t require concentration.",
+          "5 – Affects one additional target.",
+          "6 – Ignores resistance.",
+          "7 – Teleport 20 ft before/after casting.",
+          "8 – Gain an extra Bonus Action next turn.",
+          "Uses = 2 per long rest."
+        ]
+      },
+      {
+        "name": "Reality Blink (Level 15)",
+        "entries": [
+          "When targeted by an attack or harmful spell, you can use your Reaction to vanish, reappearing within 30 ft in an unoccupied space; the attack automatically misses.",
+          "Uses = Intelligence modifier per long rest (regain half on short rest)."
+        ]
+      },
+      {
+        "name": "Arcane Cataclysm (Level 17)",
+        "entries": [
+          "Once per long rest as an Action, unleash catastrophic magic. Each creature of your choice within 60 ft must make a Dexterity save vs your Spell Save DC. On fail: 12d10 force damage + push 20 ft. Success: half damage, no push.",
+          "After use, roll d12 on the Lingering Effects Table to determine a random field of chaos for 1 minute (see source document)."
+        ]
+      },
+      {
+        "name": "Master of Misrule (Level 20)",
+        "entries": [
+          "You can choose any Chaos Die result without rolling. Once per turn when you cast a spell, you may also cast a cantrip as a Bonus Action.",
+          "Once per long rest, cast Rewrite Reality — reshape a 30-ft area of terrain or restore structures instantly."
+        ]
+      },
+      {
+        "type": "subclass",
+        "name": "Schools of Misrule",
+        "entries": [
+          {
+            "name": "Grand Advisor",
+            "entries": [
+              {
+                "name": "This Is How It’s Done (3rd Level)",
+                "entries": [
+                  "As a Free Action, when you or an ally within 30 ft makes an attack roll, ability check, or saving throw, you may declare: “This is how it’s done!”",
+                  "Replace that die result with either a natural 1 or 20 (your choice).",
+                  "Uses = Intelligence modifier (min 1) per long rest."
+                ]
+              },
+              {
+                "name": "Arcane Escapade (6th Level)",
+                "entries": [
+                  "When you or an ally within 30 ft takes damage or is targeted by an attack, you can use your Reaction for one of the following:",
+                  "<b>Slapstick Shift.</b> Teleport the target 15 ft; attacker must succeed Int save or grant advantage on next attack against it.",
+                  "<b>Comedic Counter.</b> Reduce damage by 1d8 + Int mod and attacker has disadvantage on next attack.",
+                  "<b>Chaotic Blessing.</b> Target ally gains +1d8 to next attack roll or spell save DC.",
+                  "Uses = higher of Int or Proficiency bonus per long rest."
+                ]
+              },
+              {
+                "name": "Script of Shenanigans (10th Level)",
+                "entries": [
+                  "<b>Dimensional Double.</b> When you use a Bonus Action to cast a cantrip or Kamek feature, your 'other you' acts in sync; as part of that Bonus Action, either make one weapon attack (using Int for attack and damage), command a summoned Koopa to attack, or heal an ally for 1d8.",
+                  "Uses = Intelligence modifier per long rest.",
+                  "<b>Spell Weaving.</b> You can maintain concentration on two spells at once if one is 2nd level or lower (for 1 minute maximum, then choose one to keep). Once per short rest."
+                ]
+              },
+              {
+                "name": "Grand Rewrite (14th Level)",
+                "entries": [
+                  "As an Action, choose up to three creatures within 30 ft; each rerolls one d20 rolled within the last round, and you decide which result applies. Once per long rest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Arcane Prankster",
+            "entries": [
+              {
+                "name": "Mirage Mastery (3rd Level)",
+                "entries": [
+                  "Whenever you cast a spell of 1st level or higher, create a 15-ft cube mirage within 60 ft lasting until your next turn.",
+                  "Creatures entering or starting their turn there make a Wis save vs your DC or suffer one:",
+                  "• Speed halved until next turn. • Disadvantage on next attack or save. • Teleport 5 ft in random direction (d8).",
+                  "You can create Int modifier mirages per long rest. Bonus Action to move or reshape an active mirage when you cast.",
+                  "Out of combat, you can create harmless illusions in a 10-ft cube for 10 minutes."
+                ]
+              },
+              {
+                "name": "Trickspace Shift (6th Level)",
+                "entries": [
+                  "When you take damage from an attack, use Reaction to teleport 15 ft and summon an illusory duplicate (1 mirror image).",
+                  "When an ally within 30 ft takes damage, you can swap their position with another willing creature within 30 ft of them.",
+                  "If damage < 30, attacker makes Int save or is disoriented (disadvantage on next attack).",
+                  "Uses = Proficiency bonus per long rest."
+                ]
+              },
+              {
+                "name": "Prismatic Paradox (10th Level)",
+                "entries": [
+                  "Once per turn when you cast a spell of 2nd level or higher, apply one Paradox Effect:",
+                  "• Twin Mirage – affect a second target for half effect.",
+                  "• Quantum Dodge – you or an ally gains resistance to all damage until your next turn.",
+                  "• Echo Cast – spell repeats at start of your next turn at half potency.",
+                  "• Holographic Reality – duplicate yourself; advantage on next attack before end of turn.",
+                  "Uses = Int modifier per long rest. At 14th level you may apply two different effects once per long rest."
+                ]
+              },
+              {
+                "name": "Grand Hall of Mirrors (14th Level)",
+                "entries": [
+                  "As an Action, create a 30-ft-radius sphere of mirrored reflections for 1 minute (no concentration).",
+                  "Allies gain +1 AC and advantage on Dex saves; once per turn when you cast or attack, teleport 15 ft and leave an illusory duplicate.",
+                  "Enemies starting their turn inside must make a Wis save or be disoriented (attack misses, random teleport, or 1d8 force damage).",
+                  "Once per long rest (or expend a 5th-level slot to reuse)."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reality Shaper",
+            "entries": [
+              {
+                "name": "Reality Warp (3rd Level)",
+                "entries": [
+                  "When you cast a spell of 1st level or higher, choose a 10-ft cube within 30 ft to warp until start of your next turn:",
+                  "• Enemies – treat as difficult terrain. • Allies – move at half cost and gain +1 AC.",
+                  "You can maintain Int modifier zones for 1 minute; move them 10 ft as a Bonus Action. Regain uses after long rest."
+                ]
+              },
+              {
+                "name": "Unstable Field (6th Level)",
+                "entries": [
+                  "As a Bonus Action, create a 10-ft aura of chaotic energy for 1 minute. At the start of each turn, roll a d6 for the effect:",
+                  "1 – Enemies take 1d6 fire or lightning damage. 2 – Allies heal 1d6. 3 – All creatures pushed 5 ft. 4 – You gain +1 AC. 5 – Allies gain +5 ft speed. 6 – Spells inside +1 attack and save DCs. Also negates invisibility and illusions inside. Uses = Proficiency bonus per long rest."
+                ]
+              },
+              {
+                "name": "Fractured Reality (10th Level)",
+                "entries": [
+                  "You can cast <i>mirror image</i> or <i>blur</i> at will as a Reaction when targeted by an attack (no slot).",
+                  "Once per long rest, force a creature within 60 ft to reroll a d20 with advantage or disadvantage. Uses = Proficiency bonus per long rest."
+                ]
+              },
+              {
+                "name": "Reality Burst (14th Level)",
+                "entries": [
+                  "As a Bonus Action, unleash dimensional energy in a 20-ft radius for 1 minute. Hostiles treat area as difficult terrain; you can mark two stable squares that cannot be moved or teleported from.",
+                  "Each turn when a creature attacks or casts a spell there, you can use Reaction to Deflect Reality (disadvantage) or Phase Flicker (teleport target 10 ft).",
+                  "When the field ends, choose a creature that started its turn inside; it makes a Con save vs your DC or takes 4d10 force damage (half on success). Once per long rest."
+                ]
+              }
+            ]
+          },
+      {
+        "type": "spells",
+        "name": "Magikoopa Spells",
+        "entries": [
+          {
+            "name": "Starburst Bolt",
+            "level": 0,
+            "school": "Evocation",
+            "time": ["1 action"],
+            "range": "60 feet",
+            "components": ["V", "S"],
+            "duration": "Instantaneous",
+            "entries": [
+              "You hurl a sparkling bolt of starlight. Make a ranged spell attack; on a hit, the target takes 1d10 force damage and glitters until the start of your next turn, granting advantage on the next attack roll against it.",
+              "Damage increases by 1d10 at 5th (2d10), 11th (3d10), and 17th (4d10) level."
+            ]
+          },
+          {
+            "name": "Mini-Morph",
+            "level": 0,
+            "school": "Transmutation",
+            "time": ["1 action"],
+            "range": "10 feet",
+            "components": ["V", "S"],
+            "duration": "Concentration, up to 1 minute",
+            "entries": [
+              "Shrink or enlarge a Tiny nonmagical object (or willing Tiny creature) to half or double size. The object’s weight changes proportionally.",
+              "Creative uses—shrinking tools or keys—can help bypass obstacles."
+            ]
+          },
+          {
+            "name": "Spectral Broom",
+            "level": 0,
+            "school": "Conjuration",
+            "time": ["1 action"],
+            "range": "10 feet",
+            "components": ["V", "S"],
+            "duration": "10 minutes",
+            "entries": [
+              "Summon a ghostly broom that hovers near you, performing light chores (carry 5 lb, clean, deliver items within 30 ft).",
+              "As a distraction in combat, it can impose disadvantage on one creature’s next Perception check against you."
+            ]
+          },
+          {
+            "name": "Mop-Up Magic",
+            "level": 0,
+            "school": "Transmutation",
+            "time": ["1 action"],
+            "range": "30 feet",
+            "components": ["V", "S"],
+            "duration": "Instantaneous",
+            "entries": [
+              "Instantly clean or rearrange a 10-ft cube: remove grime, organize objects, or patch minor scuffs.",
+              "Used repeatedly over 10 minutes, can fully clean a small room or outfit."
+            ]
+          },
+          {
+            "name": "Comical Confusion",
+            "level": 2,
+            "school": "Enchantment",
+            "time": ["1 action"],
+            "range": "30 feet",
+            "components": ["V", "S", "M (a jester’s bell or coin)"],
+            "duration": "Concentration, up to 1 minute",
+            "entries": [
+              "Twist a creature’s perception into slapstick chaos. Wis save or be befuddled; at each turn start, roll d4:",
+              "1–2 attacks nearest creature, 3 moves 15 ft randomly, 4 stands giggling. Save ends the effect."
+            ]
+          },
+          {
+            "name": "Polymorph Pop!",
+            "level": 2,
+            "school": "Transmutation",
+            "time": ["1 action"],
+            "range": "30 feet",
+            "components": ["V", "S"],
+            "duration": "Concentration, up to 1 minute",
+            "entries": [
+              "Wis save or transform target into a Tiny toy or trinket of your choice (speed 0, AC 12 + Int mod, keeps HP but no actions).",
+              "If form takes ≥ 10 damage from one source, effect ends. Each turn the target repeats the save.",
+              "When it reverts, it takes 2d8 force damage.",
+              "Can’t affect creatures with CR > your level. At higher slots, threshold +5 and damage +1d8 per slot."
+            ]
+          },
+          {
+            "name": "Summon Koopa",
+            "level": 3,
+            "school": "Conjuration",
+            "time": ["1 action"],
+            "range": "30 feet",
+            "components": ["V", "S", "M (a pinch of shell dust)"],
+            "duration": "Concentration, up to 1 hour",
+            "entries": [
+              "Conjure a Koopa ally within range; roll d8 for type (Green, Red, Blue, Yellow, Paratroopa, Hammer Bro, Magikoopa, or Golden).",
+              "Acts after your turn and obeys commands. Lose concentration → vanishes in smoke.",
+              "At higher levels: +1 Koopa per slot above 3rd."
+            ]
+          },
+          {
+            "name": "Hexstar Storm",
+            "level": 5,
+            "school": "Evocation",
+            "time": ["1 action"],
+            "range": "120 feet",
+            "components": ["V", "S", "M (five tiny glass stars)"],
+            "duration": "Instantaneous",
+            "entries": [
+              "A 20-ft radius sphere erupts with five shining stars. Each creature of your choice Dex save; fail = 5d10 force damage, success half.",
+              "Then roll d6 for a lingering effect (light, terrain, orbiting star +2 AC, buffs or temp HP, etc.)."
+            ]
+          },
+          {
+            "name": "Summon Koopa Squad",
+            "level": 6,
+            "school": "Conjuration",
+            "time": ["1 minute"],
+            "range": "60 feet",
+            "components": ["V", "S", "M (a handful of gold coins)"],
+            "duration": "Concentration, up to 10 minutes",
+            "entries": [
+              "Conjure 1d4 + 2 Koopas (roll d8 each for type). They act after your turn and obey commands.",
+              "At turn end, roll d6 for antics (+AC, extra damage, group attack, shield wall, healing, etc.)."
+            ]
+          },
+          {
+            "name": "Grand Star Cataclysm",
+            "level": 9,
+            "school": "Evocation",
+            "time": ["1 action"],
+            "range": "120 feet",
+            "components": ["V", "S", "M (a crystal star worth 500 gp)"],
+            "duration": "Instantaneous",
+            "entries": [
+              "A colossal star detonates in a 60-ft radius; Dex save → 20d6 force + 20d6 radiant (half on success).",
+              "Then roll d12 for lingering cosmic effects (zero-gravity, healing light, falling fragments, etc.)."
+            ]
+          },
+          {
+            "name": "Rewrite Reality",
+            "level": 9,
+            "school": "Transmutation",
+            "time": ["1 minute"],
+            "range": "60 feet",
+            "components": ["V", "S", "M (a fragment of a shattered star)"],
+            "duration": "Instantaneous",
+            "entries": [
+              "Rewrite a 30-ft radius area: restore structures, banish summons, reshape terrain, or reverse catastrophic effects (at DM discretion).",
+              "After casting, roll d8 for side effect (exhaustion, healing, advantage, beneficial aura, etc.)."
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "repo": {
+    "name": "Kamek Project (Koopa + Magikoopa)",
+    "author": "Dylan Luke",
+    "version": "1.0",
+    "system": "dnd5e"
+  },
+  "files": [
+    {
+      "name": "Koopa Race",
+      "filename": "Koopa Race.json",
+      "type": "race",
+      "path": "Koopa Race.json"
+    },
+    {
+      "name": "Magikoopa Class",
+      "filename": "Magikoopa Class.json",
+      "type": "class",
+      "path": "Magikoopa Class.json"
+    }
+  ]
+}
